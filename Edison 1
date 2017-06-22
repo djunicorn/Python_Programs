@@ -1,16 +1,15 @@
-
 #-------------Setup----------------
 
 import Ed
 
 Ed.EdisonVersion = Ed.V2
-
 Ed.DistanceUnits = Ed.CM
 Ed.Tempo = Ed.TEMPO_MEDIUM
 
 #--------Your code below-----------
 
 #####Functions for ease of use#####
+
 def forward(x,y):
     Ed.Drive(Ed.FORWARD,x,y)
 
@@ -26,7 +25,7 @@ def turnl(x,y):
 def wait(x):
     Ed.TimeWait(x,Ed.TIME_SECONDS)
 
-####Functions end, function calls begin
+####Functions end, function calls begin#####
 
 forward(Ed.SPEED_6,35)
 back(Ed.SPEED_5,35)
