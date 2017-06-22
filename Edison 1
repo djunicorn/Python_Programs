@@ -1,0 +1,28 @@
+
+#-------------Setup----------------
+
+import Ed
+
+Ed.EdisonVersion = Ed.V2
+
+Ed.DistanceUnits = Ed.CM
+Ed.Tempo = Ed.TEMPO_MEDIUM
+
+#--------Your code below-----------
+
+def forward(x,y):
+    Ed.Drive(Ed.FORWARD,x,y)
+
+def back(x,y):
+    Ed.Drive(Ed.BACKWARD,Ed.SPEED_5,y)
+
+forward(Ed.SPEED_6,35)
+back(Ed.SPEED_5,35)
+    
+forward(Ed.SPEED_6,35)
+back(Ed.SPEED_5,35)
+    
+    
+forward(Ed.SPEED_6,35)
+Ed.TimeWait(3, Ed.TIME_SECONDS)
+back(Ed.SPEED_5,35)
