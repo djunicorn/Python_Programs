@@ -14,7 +14,13 @@ def forward(x,y):
     Ed.Drive(Ed.FORWARD,x,y)
 
 def back(x,y):
-    Ed.Drive(Ed.BACKWARD,Ed.SPEED_5,y)
+    Ed.Drive(Ed.BACKWARD,x,y)
+    
+def turnr(x,y):
+    Ed.Drive(Ed.SPIN_RIGHT,x,y)
+
+def turnl(x,y):
+    Ed.Drive(Ed.SPIN_RIGHT,x,y)
 
 forward(Ed.SPEED_6,35)
 back(Ed.SPEED_5,35)
