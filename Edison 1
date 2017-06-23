@@ -20,19 +20,25 @@ def turnr(x,y):
     Ed.Drive(Ed.SPIN_RIGHT,x,y)
 
 def turnl(x,y):
-    Ed.Drive(Ed.SPIN_RIGHT,x,y)
+    Ed.Drive(Ed.SPIN_LEFT,x,y)
     
 def wait(x):
     Ed.TimeWait(x,Ed.TIME_SECONDS)
 
+def rledon():
+    Ed.RightLed(Ed.ON)
+
+def lledon():
+    Ed.Leftled(Ed.ON)
+
+def rledoff():
+    Ed.RightLed(Ed.OFF)
+
+def lledoff():
+    Ed.LeftLed(Ed.OFF)
+
 ####Functions end, function calls begin#####
 
-forward(6,35)
-back(5,35)
 
-forward(6,35)
-back(,35)
-
-forward(6,35)
-wait(1)
-back(5,35)
+while 1 == 1
+    forward(5,1)
